@@ -1,0 +1,59 @@
+use graduate_work;
+
+create table _field(
+id int not null auto_increment,
+name varchar(255) not null,
+selector varchar(255) not null,
+weight float not null,
+primary key (id)
+);
+
+create table _site(
+id int not null auto_increment,
+status enum('INDEXING', 'INDEXED', 'FAILED') NOT NULL,
+status_time datetime not null,
+last_error text,
+url varchar(255) not null,
+name varchar(255) not null,
+primary key (id)
+);
+
+create table _page (
+id int not null auto_increment,
+path varchar(500) not null,
+code int not null,
+content mediumtext not null,
+site_id int not null,
+primary key (id),
+foreign key (site_id) references _site(id)
+);
+CREATE INDEX index_page ON _page (path);
+
+create table _lemma(
+id int not null auto_increment,
+lemma varchar(255) not null,
+frequency int not null,
+site_id int not null,
+primary key(id),
+foreign key (site_id) references _site(id)
+);
+create index index_lemma on _lemma (lemma);
+
+create table _index(
+id int not null auto_increment,
+page_id int not null,
+lemma_id int not null,
+rank_ float not null,
+primary key (id),
+foreign key (page_id) references _page(id),
+foreign key (lemma_id) references _lemma(id)
+);
+create index index_index on _index (page_id, lemma_id);
+
+insert into _field(name, selector, weight) value('title', 'title', 1);
+
+insert into _field(name, selector, weight) value('body', 'body', 0.8)
+
+
+
+

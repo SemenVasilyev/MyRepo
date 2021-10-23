@@ -1,0 +1,22 @@
+# settings BD
+host: localhost
+port:    # if port null then use 3306
+bdName: graduate_work
+username: root
+password: root
+#-------------
+
+# list sites
+siteFromPropertys:
+  - url: https://www.lenta.ru
+    name: Лента.ру
+  - url: https://www.litres.ru
+    name: ЛитРес – библиотека электронных книг
+#-------------
+
+tablePrefix: search_engine
+
+userAgent: "(Mozilla/5.0 (Windows; U; WindowsNT 5.1; en-US; rv1.8.1.6) Gecko/20070725 Firefox/2.0.0.6"
+
+webAccess: /admin
+
