@@ -1,0 +1,64 @@
+﻿<?xml version="1.1" encoding="UTF-8" standalone="no"?><settings>
+    <!-- Database configuration -->
+    <database>
+        <driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</driver>
+        <url>jdbc:sqlserver://</url>
+        <serverName>192.168.3.43</serverName>
+        <!-- 192.168.3.102-->
+        <!--192.168.3.98\SQLEXPRESS-->
+        <portNumber>1433</portNumber>
+        <databaseName>MagObjectsJournal</databaseName>
+        <userName></userName>
+        <!--admin -->
+        <password>t</password>
+        <!--mag -->
+    </database>
+    <!--Different settings-->
+    <difsettings>
+        <paragraph>true</paragraph>
+        <stek>false</stek>
+        <log>true</log>
+        <capacity>4</capacity> <!-- разрядность для номера задания-->
+        <groupByThree>false</groupByThree> <!-- номер в виде групп символов-->
+        <undPersInEach>false</undPersInEach> <!-- Не установленное лицо в каждом поле Объекта(фамилия, имя, отчество-->
+        <saveInNum>true</saveInNum> <!--Не обнулять номер входящего при регистрации заданий по сопроводу -->
+        <saveShifr>true</saveShifr> <!--Сохранять последний выбранный шифр мероприятия-->
+        <additionalTables>true</additionalTables> <!--Включает сохранеине номеров УД и КУСП в дополнительную таблицу БД МАГ -->
+    </difsettings>
+    <!--Paragraph's data base -->
+    <databasePar>
+        <driver2>com.microsoft.sqlserver.jdbc.SQLServerDriver</driver2>
+        <url2>jdbc:sqlserver://</url2>
+        <serverName2>localhost</serverName2>
+        <!--192.168.3.101-->
+        <!--192.168.3.117\KIP_SQL-->
+        <portNumber2/>
+        <databaseName2>JurnalS_v2</databaseName2>
+        <userName2></userName2>
+        <password2></password2>
+    </databasePar>
+    <!--Stek's data base-->
+    <databaseStek>
+        <driver3>com.microsoft.sqlserver.jdbc.SQLServerDriver</driver3>
+        <url3>jdbc:sqlserver://</url3>
+        <serverName3>192.168.3.99\SQLEXPRESS</serverName3>
+        <portNumber3>1433</portNumber3>
+        <databaseName3>sms</databaseName3>
+        <userName3></userName3>
+        <password3></password3>
+    </databaseStek>
+    <!--Scaner's configuration-->
+    <scanner>
+        <com>true</com>
+        <port>COM3</port>
+        <speed>9600</speed>
+        <bits>8</bits>
+        <stopBits>1</stopBits>
+        <parity>0</parity>
+    </scanner>
+    <!--Different default values which used in import process-->
+    <defaultValues>
+        <otd_id>1</otd_id>
+        <where_act_id>4</where_act_id>
+    </defaultValues>
+</settings>

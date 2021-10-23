@@ -1,0 +1,1192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="rus.dreamer.GUI.MainWindow">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="5" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="18" width="999" height="1373"/>
+    </constraints>
+    <properties>
+      <enabled value="true"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="a7143" class="javax.swing.JButton" binding="But_Import">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="200" height="25"/>
+            <preferred-size width="200" height="25"/>
+          </grid>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <text value="&amp;Импортировать!"/>
+        </properties>
+      </component>
+      <component id="df72a" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="ЗАДАНИЕ"/>
+        </properties>
+      </component>
+      <scrollpane id="bf225">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="200" height="300"/>
+            <preferred-size width="200" height="322"/>
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <horizontalScrollBarPolicy value="31"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="862d5" class="javax.swing.JTextArea" binding="TpDcText">
+            <constraints/>
+            <properties>
+              <lineWrap value="true"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <scrollpane id="d9777" binding="jspTask">
+        <constraints>
+          <grid row="1" column="1" row-span="3" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="200" height="500"/>
+            <preferred-size width="400" height="500"/>
+          </grid>
+        </constraints>
+        <properties>
+          <alignmentX value="0.5"/>
+          <alignmentY value="0.5"/>
+          <autoscrolls value="false"/>
+          <verticalScrollBarPolicy value="20"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="39655" layout-manager="GridLayoutManager" row-count="44" column-count="6" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="6315b" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <labelFor value="c16a8"/>
+                  <text value="Номер задания"/>
+                </properties>
+              </component>
+              <component id="2d89f" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <labelFor value="af5fe"/>
+                  <text value="Номер бланка"/>
+                </properties>
+              </component>
+              <component id="a2a6a" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="15" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Инициатор"/>
+                </properties>
+              </component>
+              <component id="c16a8" class="javax.swing.JTextField" binding="taskNumber">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="7" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="100" height="20"/>
+                    <preferred-size width="150" height="20"/>
+                    <maximum-size width="200" height="20"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-3342388"/>
+                </properties>
+              </component>
+              <component id="af5fe" class="javax.swing.JTextField" binding="blankNumber">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="7" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="100" height="20"/>
+                    <preferred-size width="150" height="20"/>
+                    <maximum-size width="200" height="20"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-3342388"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="8bfd7" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <labelFor value="2dbc"/>
+                  <text value="Тип мероприятия"/>
+                </properties>
+              </component>
+              <component id="2dbc" class="javax.swing.JComboBox" binding="cbMerType">
+                <constraints>
+                  <grid row="9" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="3" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="20"/>
+                    <preferred-size width="100" height="20"/>
+                    <maximum-size width="200" height="20"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <font/>
+                  <model/>
+                </properties>
+              </component>
+              <component id="c10a2" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <labelFor value="92c0f"/>
+                  <text value="Цель"/>
+                </properties>
+              </component>
+              <component id="9480" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="17" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <labelFor value="d78fb"/>
+                  <text value="Ориентировка"/>
+                </properties>
+              </component>
+              <scrollpane id="40afa">
+                <constraints>
+                  <grid row="17" column="1" row-span="1" col-span="5" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <minimum-size width="200" height="40"/>
+                    <preferred-size width="200" height="40"/>
+                  </grid>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="d78fb" class="javax.swing.JTextArea" binding="taOrient">
+                    <constraints/>
+                    <properties>
+                      <lineWrap value="true"/>
+                      <wrapStyleWord value="true"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+              <scrollpane id="bac1c">
+                <constraints>
+                  <grid row="16" column="1" row-span="1" col-span="5" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <minimum-size width="200" height="40"/>
+                    <preferred-size width="200" height="40"/>
+                  </grid>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="92c0f" class="javax.swing.JTextArea" binding="taTarget">
+                    <constraints/>
+                    <properties>
+                      <lineWrap value="true"/>
+                      <wrapStyleWord value="true"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+              <scrollpane id="63a70">
+                <constraints>
+                  <grid row="15" column="1" row-span="1" col-span="5" vsize-policy="7" hsize-policy="7" anchor="1" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="200" height="30"/>
+                    <preferred-size width="200" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <enabled value="true"/>
+                  <verticalScrollBarPolicy value="21"/>
+                </properties>
+                <border type="none" title=""/>
+                <children>
+                  <component id="a2fbc" class="javax.swing.JTable" binding="tbInitiator" custom-create="true">
+                    <constraints/>
+                    <properties>
+                      <autoResizeMode value="2"/>
+                      <enabled value="true"/>
+                      <fillsViewportHeight value="false"/>
+                      <preferredScrollableViewportSize width="300" height="100"/>
+                      <showHorizontalLines value="true"/>
+                      <showVerticalLines value="true"/>
+                      <toolTipText value=""/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+              <component id="87df5" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="25" column="0" row-span="5" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="2"/>
+                  <horizontalTextPosition value="11"/>
+                  <text value="Объект"/>
+                </properties>
+              </component>
+              <component id="3c5bb" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="25" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="215" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Фамилия"/>
+                </properties>
+              </component>
+              <component id="d34b6" class="javax.swing.JTextField" binding="tObjFam">
+                <constraints>
+                  <grid row="25" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="200" height="10"/>
+                    <preferred-size width="400" height="20"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="a0f26" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="27" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="215" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Отчество"/>
+                </properties>
+              </component>
+              <component id="bbe4e" class="javax.swing.JTextField" binding="tObjSurname">
+                <constraints>
+                  <grid row="27" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="200" height="10"/>
+                    <preferred-size width="400" height="20"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="a57f4" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="29" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="215" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Пол"/>
+                </properties>
+              </component>
+              <component id="a4552" class="javax.swing.JComboBox" binding="tObjSex">
+                <constraints>
+                  <grid row="29" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="20"/>
+                    <preferred-size width="75" height="20"/>
+                    <maximum-size width="-1" height="20"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value=""/>
+                    <item value="Ж"/>
+                    <item value="М"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="248fc" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="26" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="215" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Имя"/>
+                </properties>
+              </component>
+              <component id="88345" class="javax.swing.JTextField" binding="tObjName">
+                <constraints>
+                  <grid row="26" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="200" height="10"/>
+                    <preferred-size width="400" height="20"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="f05de" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="28" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="215" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Дата рождения"/>
+                </properties>
+              </component>
+              <component id="b8977" class="javax.swing.JLabel" binding="ShifrText">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Шифр"/>
+                </properties>
+              </component>
+              <component id="de041" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="31" column="0" row-span="5" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-3355444"/>
+                  <text value="Адрес объекта"/>
+                </properties>
+              </component>
+              <component id="35383" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="32" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="215" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Улица"/>
+                </properties>
+              </component>
+              <component id="3205d" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="31" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="215" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Нас. пункт"/>
+                </properties>
+              </component>
+              <component id="6bd6d" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="33" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="215" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Дом"/>
+                </properties>
+              </component>
+              <component id="6026e" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="34" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="215" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Корпус"/>
+                </properties>
+              </component>
+              <component id="4811b" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="35" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="215" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Квартира"/>
+                </properties>
+              </component>
+              <component id="36b18" class="javax.swing.JTextField" binding="tObjAdrTown">
+                <constraints>
+                  <grid row="31" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="20"/>
+                    <preferred-size width="100" height="20"/>
+                    <maximum-size width="-1" height="20"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="97a7a" class="javax.swing.JTextField" binding="tObjAdrStreet">
+                <constraints>
+                  <grid row="32" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="20"/>
+                    <preferred-size width="100" height="20"/>
+                    <maximum-size width="-1" height="20"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="a3abf" class="javax.swing.JTextField" binding="tObjAdrBuild">
+                <constraints>
+                  <grid row="33" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="20"/>
+                    <preferred-size width="100" height="20"/>
+                    <maximum-size width="-1" height="20"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="b39a7" class="javax.swing.JTextField" binding="tObjAdrKorp">
+                <constraints>
+                  <grid row="34" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="20"/>
+                    <preferred-size width="100" height="20"/>
+                    <maximum-size width="-1" height="20"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="db88" class="javax.swing.JTextField" binding="tObjAdrFlat">
+                <constraints>
+                  <grid row="35" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="20"/>
+                    <preferred-size width="100" height="20"/>
+                    <maximum-size width="-1" height="20"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="a1f3d" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="37" column="0" row-span="7" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-3355444"/>
+                  <text value="Место работы"/>
+                </properties>
+              </component>
+              <component id="40b33" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="37" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="215" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-3355444"/>
+                  <text value="Наименование"/>
+                </properties>
+              </component>
+              <component id="6b3fc" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="39" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="215" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Нас. пункт"/>
+                </properties>
+              </component>
+              <component id="daf53" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="40" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="215" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Улица"/>
+                </properties>
+              </component>
+              <component id="d6867" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="41" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="215" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Дом"/>
+                </properties>
+              </component>
+              <component id="4887e" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="42" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="215" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Корпус"/>
+                </properties>
+              </component>
+              <component id="520fc" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="43" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="215" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Квартира"/>
+                </properties>
+              </component>
+              <component id="6efde" class="javax.swing.JTextField" binding="tObjJobTown">
+                <constraints>
+                  <grid row="39" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="20"/>
+                    <preferred-size width="100" height="20"/>
+                    <maximum-size width="-1" height="20"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="4efba" class="javax.swing.JTextField" binding="tObjJobStreet">
+                <constraints>
+                  <grid row="40" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="20"/>
+                    <preferred-size width="100" height="20"/>
+                    <maximum-size width="-1" height="20"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="5765f" class="javax.swing.JTextField" binding="tObjJobBuild">
+                <constraints>
+                  <grid row="41" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="20"/>
+                    <preferred-size width="100" height="20"/>
+                    <maximum-size width="-1" height="20"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="85f96" class="javax.swing.JTextField" binding="tObjJobFlat">
+                <constraints>
+                  <grid row="43" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="20"/>
+                    <preferred-size width="100" height="20"/>
+                    <maximum-size width="-1" height="20"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="d88e" class="javax.swing.JTextField" binding="tObjJobKorp">
+                <constraints>
+                  <grid row="42" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="20"/>
+                    <preferred-size width="100" height="20"/>
+                    <maximum-size width="-1" height="20"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="5c087" class="javax.swing.JTextField" binding="tObjJobName">
+                <constraints>
+                  <grid row="37" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="20"/>
+                    <preferred-size width="100" height="20"/>
+                    <maximum-size width="-1" height="20"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="f3bf1" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="38" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="215" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-3355444"/>
+                  <text value="Должность"/>
+                </properties>
+              </component>
+              <component id="70b3e" class="javax.swing.JTextField" binding="tObjJobDolgn">
+                <constraints>
+                  <grid row="38" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="20"/>
+                    <preferred-size width="100" height="20"/>
+                    <maximum-size width="-1" height="20"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="c7982" class="javax.swing.JTextField" binding="tPhoneNumber">
+                <constraints>
+                  <grid row="7" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="100" height="20"/>
+                    <preferred-size width="150" height="20"/>
+                    <maximum-size width="200" height="20"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="1a0ac" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Номер телефона"/>
+                </properties>
+              </component>
+              <component id="23983" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="IMEI"/>
+                </properties>
+              </component>
+              <component id="4f0f6" class="com.toedter.calendar.JDateChooser" binding="dDateBirth">
+                <constraints>
+                  <grid row="28" column="2" row-span="1" col-span="4" vsize-policy="3" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="20"/>
+                    <preferred-size width="100" height="20"/>
+                    <maximum-size width="-1" height="20"/>
+                  </grid>
+                </constraints>
+              </component>
+              <component id="e03ba" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="18" column="0" row-span="6" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <labelFor value="d78fb"/>
+                  <text value="Санкция"/>
+                </properties>
+              </component>
+              <component id="bbb3" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="18" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="215" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="ФИО"/>
+                </properties>
+              </component>
+              <component id="c4cb0" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="19" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="215" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Орган"/>
+                </properties>
+              </component>
+              <component id="30bfc" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="20" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="215" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Должность"/>
+                </properties>
+              </component>
+              <component id="72cd6" class="javax.swing.JTextField" binding="tSancFam">
+                <constraints>
+                  <grid row="18" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="20"/>
+                    <preferred-size width="75" height="20"/>
+                    <maximum-size width="-1" height="20"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="18ab0" class="javax.swing.JTextField" binding="tSancOrg">
+                <constraints>
+                  <grid row="19" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="20"/>
+                    <preferred-size width="75" height="20"/>
+                    <maximum-size width="-1" height="20"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="5e634" class="javax.swing.JTextField" binding="tSancPost">
+                <constraints>
+                  <grid row="20" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="20"/>
+                    <preferred-size width="75" height="20"/>
+                    <maximum-size width="-1" height="20"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="5ad5b" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="22" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="215" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Дата вынесения постановления"/>
+                </properties>
+              </component>
+              <component id="9ada5" class="com.toedter.calendar.JDateChooser" binding="dSancBeg">
+                <constraints>
+                  <grid row="22" column="2" row-span="1" col-span="4" vsize-policy="3" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="20"/>
+                    <preferred-size width="100" height="20"/>
+                    <maximum-size width="-1" height="20"/>
+                  </grid>
+                </constraints>
+              </component>
+              <component id="774b5" class="javax.swing.JTextField" binding="tSancLong">
+                <constraints>
+                  <grid row="23" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="20"/>
+                    <preferred-size width="75" height="20"/>
+                    <maximum-size width="-1" height="20"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="1869e" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="23" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="215" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Срок постановления"/>
+                </properties>
+              </component>
+              <component id="53a3d" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="21" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="215" height="16"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value="Номер постановления"/>
+                </properties>
+              </component>
+              <component id="1c6ba" class="javax.swing.JTextField" binding="tSancNumb">
+                <constraints>
+                  <grid row="21" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="20"/>
+                    <preferred-size width="75" height="20"/>
+                    <maximum-size width="-1" height="20"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="e08c0" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <labelFor value="b3a33"/>
+                  <text value="Основание ДОУ"/>
+                </properties>
+              </component>
+              <component id="26c64" class="javax.swing.JTextField" binding="tDeloNumber">
+                <constraints>
+                  <grid row="10" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="100" height="10"/>
+                    <preferred-size width="100" height="20"/>
+                    <maximum-size width="150" height="20"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <toolTipText value="номер основания"/>
+                </properties>
+              </component>
+              <component id="b3a33" class="javax.swing.JComboBox" binding="cbDelo">
+                <constraints>
+                  <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="100" height="20"/>
+                    <preferred-size width="215" height="20"/>
+                    <maximum-size width="200" height="22"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <enabled value="true"/>
+                  <font/>
+                  <model/>
+                </properties>
+              </component>
+              <component id="b2191" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <labelFor value="61823"/>
+                  <text value="Статья"/>
+                </properties>
+              </component>
+              <component id="61823" class="javax.swing.JComboBox" binding="cbArticles">
+                <constraints>
+                  <grid row="14" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="10" height="20"/>
+                    <preferred-size width="215" height="20"/>
+                    <maximum-size width="200" height="20"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <editable value="false"/>
+                  <enabled value="true"/>
+                  <font/>
+                  <model/>
+                </properties>
+              </component>
+              <component id="5c515" class="javax.swing.JTextField" binding="tArticlePart">
+                <constraints>
+                  <grid row="14" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="100" height="20"/>
+                    <preferred-size width="100" height="20"/>
+                    <maximum-size width="150" height="20"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <toolTipText value="часть статьи"/>
+                </properties>
+              </component>
+              <component id="45c49" class="javax.swing.JSeparator">
+                <constraints>
+                  <grid row="30" column="0" row-span="1" col-span="6" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="8cfaf" class="javax.swing.JSeparator">
+                <constraints>
+                  <grid row="24" column="0" row-span="1" col-span="6" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="5fb0d" class="javax.swing.JSeparator">
+                <constraints>
+                  <grid row="36" column="0" row-span="1" col-span="6" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="262db" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <labelFor value=""/>
+                  <text value="Дата принятия"/>
+                </properties>
+              </component>
+              <component id="14c7" class="com.toedter.calendar.JDateChooser" binding="dStartDate">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="5" vsize-policy="3" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="100" height="20"/>
+                    <preferred-size width="150" height="20"/>
+                    <maximum-size width="200" height="20"/>
+                  </grid>
+                </constraints>
+              </component>
+              <grid id="b727e" binding="jpParagraph" layout-manager="GridLayoutManager" row-count="5" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="6" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <minimum-size width="200" height="60"/>
+                    <preferred-size width="300" height="120"/>
+                  </grid>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="ca1b5" class="javax.swing.JLabel" binding="lOper">
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <labelFor value="f9cd"/>
+                      <text value="Задание отписать"/>
+                    </properties>
+                  </component>
+                  <component id="f9cd" class="javax.swing.JComboBox" binding="cbOper">
+                    <constraints>
+                      <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <minimum-size width="100" height="20"/>
+                        <preferred-size width="150" height="20"/>
+                        <maximum-size width="200" height="20"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-3408437"/>
+                      <editable value="false"/>
+                      <font/>
+                      <model/>
+                    </properties>
+                  </component>
+                  <component id="f4208" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <labelFor value=""/>
+                      <text value="Зарег. как:"/>
+                    </properties>
+                  </component>
+                  <component id="bcb5e" class="javax.swing.JRadioButton" binding="rTypeInMN1">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <hideActionText value="false"/>
+                      <horizontalAlignment value="2"/>
+                      <selected value="true"/>
+                      <text value="Отдельное задание"/>
+                    </properties>
+                  </component>
+                  <component id="dc787" class="javax.swing.JLabel" binding="lInMn">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <labelFor value="15cf0"/>
+                      <text value="Входящий №"/>
+                      <visible value="true"/>
+                    </properties>
+                  </component>
+                  <component id="15cf0" class="javax.swing.JTextField" binding="tInMN">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <minimum-size width="100" height="20"/>
+                        <preferred-size width="150" height="20"/>
+                        <maximum-size width="200" height="20"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <background color="-3342388"/>
+                      <visible value="true"/>
+                    </properties>
+                  </component>
+                  <component id="3c16c" class="javax.swing.JSeparator">
+                    <constraints>
+                      <grid row="4" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <component id="89886" class="javax.swing.JRadioButton" binding="rTypeInMN2">
+                    <constraints>
+                      <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <selected value="false"/>
+                      <text value="Задание по сопроводительному письму"/>
+                    </properties>
+                  </component>
+                  <component id="482d7" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Параграф"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <component id="13b71" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <labelFor value="b3a33"/>
+                  <text value="Доп. номер"/>
+                </properties>
+              </component>
+              <component id="b020b" class="javax.swing.JTextField" binding="tAddDeloNumber">
+                <constraints>
+                  <grid row="11" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="20"/>
+                    <preferred-size width="150" height="20"/>
+                    <maximum-size width="200" height="20"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="2bf2" class="javax.swing.JFormattedTextField" binding="tIMEI">
+                <constraints>
+                  <grid row="8" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="100" height="20"/>
+                    <preferred-size width="150" height="20"/>
+                    <maximum-size width="200" height="20"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="a0ca8" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <labelFor value=""/>
+                  <text value="Исполнитель"/>
+                </properties>
+              </component>
+              <scrollpane id="789df">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="5" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="-1" height="70"/>
+                    <maximum-size width="-1" height="100"/>
+                  </grid>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="1f57b" class="javax.swing.JList" binding="lOperators">
+                    <constraints/>
+                    <properties>
+                      <selectionMode value="0"/>
+                    </properties>
+                  </component>
+                </children>
+              </scrollpane>
+              <component id="f1ba" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Основание УД/КУСП"/>
+                </properties>
+              </component>
+              <component id="77ef" class="javax.swing.JTextField" binding="tAddDeloNum">
+                <constraints>
+                  <grid row="12" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="20"/>
+                    <preferred-size width="150" height="20"/>
+                    <maximum-size width="200" height="20"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="b3157" class="javax.swing.JTextField" binding="tAddDeloPlace">
+                <constraints>
+                  <grid row="13" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="20"/>
+                    <preferred-size width="150" height="20"/>
+                    <maximum-size width="200" height="20"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="c27fc" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <labelFor value=""/>
+                  <text value="Дата"/>
+                </properties>
+              </component>
+              <component id="fc93d" class="com.toedter.calendar.JDateChooser" binding="dAddDelo">
+                <constraints>
+                  <grid row="13" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="7" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="50" height="20"/>
+                    <preferred-size width="215" height="20"/>
+                    <maximum-size width="-1" height="20"/>
+                  </grid>
+                </constraints>
+              </component>
+              <component id="741f8" class="javax.swing.JTextField" binding="tAddDelo">
+                <constraints>
+                  <grid row="12" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="215" height="24"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="db261" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Взаимодействие с ОПБ"/>
+                </properties>
+              </component>
+              <component id="13f50" class="javax.swing.JComboBox" binding="cbShifr">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <minimum-size width="100" height="20"/>
+                    <preferred-size width="150" height="20"/>
+                    <maximum-size width="200" height="20"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-3342388"/>
+                  <editable value="false"/>
+                  <enabled value="true"/>
+                  <model/>
+                </properties>
+              </component>
+              <component id="dcb83" class="javax.swing.JCheckBox" binding="OPB_checkBox">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </scrollpane>
+      <component id="e6efe" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="QRcode"/>
+        </properties>
+      </component>
+      <scrollpane id="8b533">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <minimum-size width="200" height="300"/>
+            <preferred-size width="200" height="300"/>
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="a8dae" class="javax.swing.JTextArea" binding="TpQRCode">
+            <constraints/>
+            <properties>
+              <font size="8"/>
+              <lineWrap value="true"/>
+              <minimumSize width="-1" height="-1"/>
+              <text value=""/>
+              <wrapStyleWord value="false"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="e7dd4" class="javax.swing.JButton" binding="But_CheckActive">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="200" height="25"/>
+            <preferred-size width="200" height="25"/>
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <text value="&amp;Проверить на активность"/>
+        </properties>
+      </component>
+      <component id="bc24f" class="javax.swing.JButton" binding="But_Decrypt">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="200" height="25"/>
+            <preferred-size width="200" height="25"/>
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="&amp;Разобрать"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="buttonGroup1">
+      <member id="bcb5e"/>
+      <member id="89886"/>
+    </group>
+  </buttonGroups>
+</form>
