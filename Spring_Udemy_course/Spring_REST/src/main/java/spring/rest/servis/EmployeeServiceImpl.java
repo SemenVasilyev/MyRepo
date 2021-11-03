@@ -1,9 +1,9 @@
-package spring.mvc_hibernate_aop.servis;
+package spring.rest.servis;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import spring.mvc_hibernate_aop.dao.EmployeeDAO;
-import spring.mvc_hibernate_aop.entity.Employee;
+import spring.rest.dao.EmployeeDAO;
+import spring.rest.entity.Employee;
 
 
 import javax.transaction.Transactional;
